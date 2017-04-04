@@ -1,0 +1,285 @@
+* {
+	box-sizing: border-box;
+}
+.header {
+	padding: 35px 0px 35px 35px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+}
+.orange {
+	color: orange;
+	text-decoration: none;
+}
+
+
+.top-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	top: -17px;
+	margin-left: 30px;
+
+	li {
+		display: inline-block;
+		padding: 0 25px;
+		line-height: 42px;
+		a {
+			text-decoration: none;
+			color: #000;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.top-right {
+	display: inline-block;
+	margin-left: 75px;
+}
+
+.user-block,
+.basket-block,
+.search-block {
+	display: inline-block;
+	padding: 0 25px;
+}
+.search-block {
+	padding: 0 0 0 25px;
+	input {
+		height: 42px;
+	}
+	img {
+		position: relative;
+		top: 17px;
+	}
+}
+.top-right-unlogged {
+	display: inline-block;
+	margin-left: 250px;
+}
+
+.title {
+	margin: 0 auto;
+	text-align: center;
+	h1 {
+		font-size: 72px;
+	}
+	p {
+		color: #606060;
+		font-size: 24px;
+		line-height: 35px;
+		font-style: italic;
+	}
+	a {
+		display: block;
+		padding: 25px 34px;
+		max-width: 230px;
+		margin: 67px auto;
+		text-decoration: none;
+		border: 1px solid #959595;
+		color: #303030;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.text-blocks {
+	max-width: 1180px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.high_block {
+	background-color: #d2d2d2;
+	width: 295px;
+	height: 590px;
+	position: relative;
+}
+
+.inner-text {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align:center;
+	h3 {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	p {
+		font-size: 18px;
+		font-style: italic;
+		color: white;
+	}
+}
+
+.twitter_block, .block_left, .default_block {
+	background-color: #bbb;
+	width: 295px;
+	height: 295px;
+	position: relative;
+	p {
+		font-size: 14px;
+	}
+}
+
+.empty_block {
+	width: 295px;
+	height: 295px;
+	background-color: #dbdbdb;
+}
+
+.block_left {
+	p {
+		text-transform: uppercase;
+	}
+	background-color: #606060;
+}
+
+.default_block {
+	background-color: #cacaca;
+}
+.square_blocks {
+	display: flex;
+    flex-wrap: wrap;
+    width: 590px;
+}
+.right_blocks {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sign-up_block {
+	text-align: center;
+	padding-top: 145px;
+	padding-bottom: 60px;
+	h2 {
+		color: #303030;
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+	p {
+		color: #606060;
+		font-size: 18px;
+		font-style: italic;
+		line-height: 35px;
+	}
+	input {
+		width: 475px;
+		height: 56px;
+		border: 1px solid #959595;
+		padding: 14px 22px;
+	}
+	a {
+		position: relative;
+		top: 24px;
+	}
+}
+
+.slider {
+	width: 1182px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-top: 60px;
+	.left {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.right {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.footer {
+	width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+.section-4 {
+	max-width: 240px;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+	padding-left: 20px;
+	padding-top: 14px;
+	border-left: 1px solid rgba(0,0,0,.2);
+	h4 {
+		color: #303030;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 35px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	p {
+		color: #303030;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 23px;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		a {
+			color: #303030;
+			font-size: 12px;
+			line-height: 23px;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+
+		}
+	}
+	.social-icons {
+		img {
+			margin-right: 14px;
+		}
+	}
+}
+.category-block {
+	max-width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 75px 0;
+}
+.category-item {
+	text-align: center;
+}
+
+.items-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.category-header {
+	padding-bottom: 65px;
+	h6 {
+		color: #303030;
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+	a {
+		color: #606060;
+		font-size: 18px;
+		font-style: italic;
+		text-decoration: underline;
+	}
+	
+}

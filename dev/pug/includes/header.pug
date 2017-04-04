@@ -1,0 +1,40 @@
+
+
+.header
+	img(src="images/logo.png" alt="SH")
+	ul.top-menu
+		each val in ["Woman", "Man", "Kids", "Comming Soon", "About"]
+			li 
+				a(href='#')=val		
+				
+		- var logged = true
+		if logged
+			.top-right
+				.user-block
+					.user
+						img(src="images/user.png")
+						span Hi, Michal (
+						span 
+							a(href="#" class="orange") logout
+						span  )	
+				.basket-block
+					.basket
+						img(src="images/basket.png")
+						span Basket (4)
+				.search-block
+					input(type='text' placeholder='Search something...')
+					a(href="#")
+						img(src='images/search.png')
+		else
+			.top-right-unlogged
+				.user-block
+					.user
+						img(src="images/user.png")
+						span Log In
+				.basket-block
+					.basket
+						img(src="images/basket.png")
+						span Basket (0)
+				.search-block
+					a(href="#")
+						img(src='images/search2.png')

@@ -1,0 +1,48 @@
+mixin block_2(topText, bottomText)
+	.high_block
+		.inner-text
+			h3=topText
+			p=bottomText
+
+mixin block_t(topText, bottomText)
+	.twitter_block
+		.inner-text
+			img(src="images/bird.png")
+			p=topText
+			p.mail=bottomText
+
+mixin block_left(topText, bottomText)
+	.block_left
+		.inner-text
+			img(src="images/left.png")
+			p=topText
+			p.mail=bottomText
+
+mixin block_default(topText, bottomText)
+	.default_block
+		.inner-text
+			h3=topText
+			p=bottomText			
+
+mixin block_empty()
+	.empty_block
+		
+.title
+	h1 Hazy Shade of spring
+	p Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+	a(href="#") check new arrivals
+
+.text-blocks
+	.left_blocks
+		+block_2('HEATHER GREY BASICS', 'New Arrival')
+		+block_empty()
+	.square_blocks
+		+block_t('Opening Ceremony @IndonesiaFW tomorrow, PMers! Are you ready for the biggest fashion movement in Indonesia?', '@PuspitaMarthaID ')
+		+block_empty()
+		+block_default('chuck taylors', '$125.00')
+		+block_t('Girls, Girls, Girls: A Look Back at 50 Years of the Pirelli Calendar', '@Vogue')
+		+block_left('Jaxon Hat', 'Beanie Hat')
+		+block_default('basic blazer', 'from $199.00')
+	.right_blocks
+		+block_left('elegant shoes', 'BRAIDED LEATHER')
+		+block_2('jeans for ADVENTURE', 'New Arrival')
